@@ -1,7 +1,7 @@
 {
-  "name": "dragos-backend-assessment",
+  "name": "enterprise-backend-api",
   "version": "1.0.0",
-  "description": "Backend assessment for Dragos - secure and scalable API development",
+  "description": "Secure and scalable backend API with JWT authentication, role-based access control, and comprehensive testing",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -14,7 +14,7 @@
     "migrate": "node src/database/migrate.js",
     "seed": "node src/database/seed.js"
   },
-  "keywords": ["backend", "api", "security", "assessment"],
+  "keywords": ["backend", "api", "security", "nodejs", "express", "jwt", "sqlite", "rest-api"],
   "author": "Akshitha Voruganti",
   "license": "MIT",
   "dependencies": {

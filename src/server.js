@@ -57,7 +57,7 @@ app.use('/api/data', dataRoutes);
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({
-    message: 'Dragos Backend Assessment API',
+    message: 'Enterprise Backend API',
     version: '1.0.0',
     status: 'running',
     endpoints: {

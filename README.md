@@ -1,36 +1,34 @@
-# Dragos Backend Assessment
+# Enterprise Backend API
 
 ## Overview
-A secure and scalable backend API system built with Node.js, Express, and SQLite. This assessment demonstrates production-ready backend development with comprehensive security measures, proper error handling, and extensive testing.
+A secure and scalable backend API built with Node.js, Express, and SQLite. Includes JWT authentication, role-based access control, input validation, and automated testing.
 
-## Features Implemented
+## Key Features
 
-### Task 1: RESTful API Development ✅
-- **Authentication System**: JWT-based authentication with registration, login, and token refresh
-- **User Management**: Complete CRUD operations with role-based access control
-- **Data Management**: Generic data storage system with categorization and tagging
-- **Health Monitoring**: Comprehensive health check endpoints with system metrics
+### Authentication & Authorization
+- **JWT Authentication**: Secure token-based authentication with registration, login, and token refresh
+- **User Management**: Complete CRUD operations with role-based access control (user/admin)
+- **Password Security**: Secure password hashing with bcrypt (12 rounds)
+- **Session Management**: Proper token validation and refresh mechanisms
 
-### Task 2: Database Integration ✅
-- **SQLite Database**: Lightweight, file-based database with proper schema design
+### Database & Data Management
+- **SQLite Database**: Lightweight, file-based database with optimized schema design
 - **Relational Design**: Well-structured tables with foreign key relationships
+- **Data Operations**: Generic data storage system with categorization and tagging
 - **Data Integrity**: Proper constraints, indexes, and cascade operations
-- **Migration Support**: Automatic database initialization and table creation
 
-### Task 3: Security & Business Logic ✅
-- **Authentication**: Secure password hashing with bcrypt (12 rounds)
-- **Authorization**: Role-based access control (user/admin roles)
+### Security & Performance
 - **Input Validation**: Comprehensive validation using Joi schemas
-- **Rate Limiting**: API rate limiting to prevent abuse
-- **Security Headers**: Helmet.js for security headers
+- **Rate Limiting**: API rate limiting to prevent abuse (100 req/15min)
+- **Security Headers**: Helmet.js for security headers and XSS protection
 - **CORS Configuration**: Proper cross-origin resource sharing setup
-
-### Task 4: Testing & Documentation ✅
-- **Comprehensive Test Suite**: 100+ test cases covering all endpoints
-- **Test Coverage**: Unit and integration tests with coverage reporting
-- **API Documentation**: Detailed endpoint documentation with examples
 - **Error Handling**: Centralized error handling with proper HTTP status codes
+
+### Monitoring & Testing
+- **Health Monitoring**: Comprehensive health check endpoints with system metrics
+- **Test Coverage**: 43 test cases with 76%+ coverage across all modules
 - **Logging**: Structured logging with Winston for monitoring and debugging
+- **API Documentation**: Complete endpoint documentation with usage examples
 
 ## Technology Stack
 
@@ -54,8 +52,8 @@ A secure and scalable backend API system built with Node.js, Express, and SQLite
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/tajobe/dragos-backend-assessment_avoruganti.git
-   cd dragos-backend-assessment_avoruganti
+   git clone https://github.com/Akshitha618/Assignment-dragoos.git
+   cd Assignment-dragoos
    ```
 
 2. **Install dependencies**
@@ -209,7 +207,7 @@ curl -X POST http://localhost:3000/api/data \
 
 ## Testing
 
-The application includes comprehensive test coverage:
+The application includes good test coverage:
 
 - **Authentication Tests**: Registration, login, token validation
 - **User Management Tests**: CRUD operations, permissions
@@ -292,12 +290,10 @@ docker-compose up -d
    - Regular SQLite database backups
    - Backup rotation strategy
 
-## Contact Information
+## Contributing
 
-For questions or support regarding this assessment, please contact:
-- **Primary Contact**: [Engineer Name] - [email@dragos.com]
-- **Secondary Contact**: [Engineer Name] - [email@dragos.com]
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is created for assessment purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
